@@ -19,7 +19,7 @@ module.exports = function (deployTarget) {
       },
       'redis': {
         allowOverwrite: true,
-        keyPrefix: '<%= dasherizedPackageName %>'
+        keyPrefix: '<%= dasherizedPackageName %>',
         url: 'redis://127.0.0.1:6379/'
       }
     };
