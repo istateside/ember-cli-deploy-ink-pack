@@ -13,7 +13,15 @@ module.exports = function (deployTarget) {
   if (deployTarget === 'development') {
     return {
       'build': { environment: 'development' },
-      'plugins': ['build', 'redis', 'display-revisions', 'revision-data']
+      'plugins': ['build', 'redis', 'display-revisions', 'revision-data'],
+      'revision-data': {
+        type: 'git-commit'
+      },
+      'redis': {
+        allowOverwrite: true,
+        keyPrefix: '<%= dasherizedPackageName %>'
+        url: 'redis://127.0.0.1:6379/'
+      }
     };
   }
 
