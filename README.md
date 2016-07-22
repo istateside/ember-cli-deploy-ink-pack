@@ -33,14 +33,6 @@ SLACK_WEBHOOK=xxx
 
 If you have any trouble, get in touch with a developer who has had their environment configured. They'll provide the bucket name and host, and setup an IAM account if needed.
 
-Before you can deploy, make sure you have your SSH key added to ssh-agent. You may do this by executing the following:
-
-```bash
-ssh-add ~/.ssh/id_rsa
-```
-
-See https://developer.github.com/guides/using-ssh-agent-forwarding/ for more information about SSH agent forwarding.
-
 We use `ember-cli-deploy` to deploy our assets. Provided is a short list that covers deployment of 99% of our use cases. For more information see [ember-cli/ember-cli-deploy](https://github.com/ember-cli/ember-cli-deploy).
 
 ```bash

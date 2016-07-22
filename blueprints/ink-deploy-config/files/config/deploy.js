@@ -42,13 +42,8 @@ module.exports = function (deployTarget) {
 
     'redis': {
       allowOverwrite: true,
-      keyPrefix: '<%= dasherizedPackageName %>'
-    },
-
-    'ssh-tunnel': {
-      username: 'deploy',
-      host: env('REDIS_HOST'),
-      privateKeyPath: null
+      keyPrefix: '<%= dasherizedPackageName %>',
+      url: env('REDIS_HOST')
     },
 
     's3': {

@@ -3,10 +3,5 @@
   "keywords": [
     "ember-addon",
     "ember-cli-deploy-plugin"
-  ],
-  "ember-addon": {
-    "after": [
-      "ember-cli-deploy-ssh-tunnel"
-    ]
-  }
+  ]
 }
