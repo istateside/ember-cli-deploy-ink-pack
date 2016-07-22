@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-deploy-ink-pack",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "An opinionated collection of ember-cli-deploy plugins for continuous deployment.",
   "repository": "https://github.com/movableink/ember-cli-deploy-ink-pack.git",
   "main": "index.js",
