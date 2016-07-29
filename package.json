@@ -15,15 +15,15 @@
     "ember-cli-deploy-display-revisions": "^0.1.0",
     "ember-cli-deploy-gzip": "^0.1.0",
     "ember-cli-deploy-manifest": "^0.1.0",
-    "ember-cli-deploy-redis": "^0.1.0",
     "ember-cli-deploy-revision-data": "^0.1.0",
+    "ember-cli-deploy-rest": "^1.0.0",
     "ember-cli-deploy-s3": "^0.1.0",
     "node-slackr": "^0.1.2",
     "rsvp": "^3.1.0"
   },
   "devDependencies": {
-    "ember-cli": "1.13.5",
-    "ember-cli-release": "0.2.3"
+    "ember-cli": "2.6.2",
+    "ember-cli-release": "0.2.9"
   },
   "ember-addon": {
     "defaultBlueprint": "ink-deploy-config",
