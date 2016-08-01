@@ -17,10 +17,11 @@ module.exports = function (deployTarget) {
       'revision-data': {
         type: 'git-commit'
       },
-      'redis': {
-        allowOverwrite: true,
-        keyPrefix: '<%= dasherizedPackageName %>',
-        url: 'redis://127.0.0.1:6379/'
+
+      'rest': {
+        baseUrl: 'http://example.com/change-me',
+        username: 'deploy',
+        password: 'none'
       }
     };
   }
@@ -40,10 +41,10 @@ module.exports = function (deployTarget) {
       type: 'git-commit'
     },
 
-    'redis': {
-      allowOverwrite: true,
-      keyPrefix: '<%= dasherizedPackageName %>',
-      url: env('REDIS_HOST')
+    'rest': {
+      baseUrl: env('REST_URL'),
+      username: env('REST_USERNAME'),
+      password: env('REST_PASSWORD')
     },
 
     's3': {
